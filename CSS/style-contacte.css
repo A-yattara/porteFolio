@@ -1,0 +1,34 @@
+
+
+/* Formulaire de contact */
+form {
+    max-width: 500px;
+    margin: center; /* Attention, 'center' n'est pas une valeur valide pour margin seule, utilisez '0 auto' */
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: sans-serif;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #000000;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}

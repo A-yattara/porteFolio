@@ -1,0 +1,145 @@
+
+
+/* Styles pour le corps de la page et la section principale */
+body {
+    background-color: #ffffff; /* Couleur de fond sombre, similaire à Netflix */
+}
+
+section {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   
+    font-family: Arial, sans-serif; /* Une police courante et propre */
+    color: white;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* Styles pour la vidéo en fond */
+
+  #background-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+  }
+    
+/* DÉBUT STYLE BOUTON PROFIL DANS INDEX */
+.my-custom-button {
+    display: inline-block; /* Permet d'appliquer padding, margin, width/height */
+    padding: 12px 25px; /* Espacement intérieur du bouton */
+    font-size: 1.1em; /* Taille du texte */
+    font-weight: bold; /* Texte en gras */
+    text-decoration: none; /* Supprime le soulignement par défaut des liens */
+    color: white; /* Couleur du texte */
+    background-color: transparent; /* Couleur de fond transparente */
+    border: none; /* Pas de bordure par défaut */
+    border-radius: 5px; /* Bords légèrement arrondis */
+    cursor: pointer; /* Indique que c'est un élément cliquable */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animation douce au survol */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Petite ombre pour un effet 3D */
+}
+
+/* Styles au survol (hover) */
+.my-custom-button:hover {
+    background-color: #e7eaee; /* Bleu plus foncé au survol */
+    transform: translateY(-2px); /* Léger soulèvement */
+    box-shadow: 0 6px 10px rgb(214, 203, 203); /* Ombre plus prononcée */
+}
+
+/* Styles lorsque le bouton est activé (clic) */
+.my-custom-button:active {
+    background-color: #1e54b8; /* Bleu encore plus foncé */
+    transform: translateY(0); /* Le bouton revient à sa position initiale */
+    box-shadow: 0 2px 4px rgba(112, 93, 180, 0.541); /* Ombre réduite pour un effet "enfoncé" */
+}
+
+/* Styles pour la balise <button> si vous l'utilisez */
+/* button.my-custom-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+} */
+/* Styles pour le Footer */
+.site-footer {
+    background-color: #c9c4c9; /* Fond blanc comme sur l'image */
+    padding: 40px 20px; /* Espace interne au pied de page */
+    text-align: center; /* Centre le texte et les éléments inline/inline-block */
+    
+    font-family: 'Roboto', sans-serif; /* J'utilise Roboto pour imiter la police */
+}
+
+/* Styles pour les icônes de réseaux sociaux */
+.social-icons {
+    margin-bottom: 25px; /* Espace entre les icônes et le texte de copyright */
+    display: flex; /* Utilise Flexbox pour aligner les icônes */
+    justify-content: center; /* Centre les icônes horizontalement */
+    gap: 15px; /* Espace entre les icônes */
+}
+
+.social-icon {
+    display: flex; /* Utilise Flexbox pour centrer l'icône à l'intérieur du cercle */
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Taille du cercle */
+    height: 40px; /* Taille du cercle */
+    background-color: #f0f5ff; /* Couleur de fond des cercles (bleu très clair) */
+    color: #4267B2; /* Couleur par défaut des icônes (un bleu Facebook pour l'exemple) */
+    border-radius: 50%; /* Rend l'élément circulaire */
+    font-size: 1.2em; /* Taille de l'icône */
+    text-decoration: none; /* Enlève le soulignement des liens */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition douce pour le survol */
+}
+
+/* Couleurs spécifiques pour chaque icône si vous voulez : */
+.social-icon.facebook {
+    color: #4267B2; /* Couleur Facebook */
+}
+.social-icon.github {
+    color: #333; /* Couleur de GitHub (ou #6e5494 pour un violet GitHub) */
+}
+.social-icon.linkedin {
+    color: #0A66C2; /* Couleur LinkedIn */
+}
+
+.social-icon:hover {
+    background-color: #e0e5f5; /* Couleur de fond plus foncée au survol */
+    /* Vous pouvez changer la couleur de l'icône au survol aussi */
+    /* color: #333; */
+}
+
+/* Styles pour le texte de copyright */
+.copyright p {
+    font-size: 0.85em; /* Taille du texte du copyright */
+    color: #777; /* Couleur grise pour le texte */
+    margin: 0; /* Supprime la marge par défaut des paragraphes */
+}
+
+/* Media Queries pour la responsivité (ajustements pour les petits écrans) */
+@media (max-width: 600px) {
+    .site-footer {
+        padding: 30px 15px;
+    }
+    .social-icons {
+        gap: 10px; /* Réduit l'espace entre les icônes sur petits écrans */
+    }
+    .social-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 1.1em;
+    }
+    .copyright p {
+        font-size: 0.8em;
+    }
+}
+
+
+

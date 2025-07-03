@@ -1,0 +1,112 @@
+/* Styles pour le corps de la page et la section principale */
+body {
+    background-color: #ffffff; /* Couleur de fond sombre, similaire à Netflix */
+}
+
+section {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1a1a2e; /* Couleur de fond par défaut des sections */
+    font-family: Arial, sans-serif; /* Police de caractères globale */
+    color: white; /* Couleur de texte globale */
+    text-align: center;
+    flex-direction: column;
+
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+
+
+}
+/* photoooo */
+.profile-picture-container {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    background-color: white; /* The white blob shape background */
+    border-radius: 60% 40% 30% 70% / 60% 40% 70% 30%; /* Blob shape using border-radius */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: hidden; /* Hide parts of the image that go beyond the blob */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* Subtle glow around the blob */
+    margin-bottom: 10px; /* Space between the picture and the name */
+    
+}
+    
+/* Styles pour le Footer */
+.site-footer {
+    background-color: #c9c4c9; /* Fond blanc comme sur l'image */
+    padding: 40px 20px; /* Espace interne au pied de page */
+    text-align: center; /* Centre le texte et les éléments inline/inline-block */
+    border-top: 1px solid #f0f0f0; /* Une fine ligne gris clair en haut du footer */
+    font-family: 'Roboto', sans-serif; /* J'utilise Roboto pour imiter la police */
+}
+
+/* Styles pour les icônes de réseaux sociaux */
+.social-icons {
+    margin-bottom: 25px; /* Espace entre les icônes et le texte de copyright */
+    display: flex; /* Utilise Flexbox pour aligner les icônes */
+    justify-content: center; /* Centre les icônes horizontalement */
+    gap: 15px; /* Espace entre les icônes */
+}
+
+.social-icon {
+    display: flex; /* Utilise Flexbox pour centrer l'icône à l'intérieur du cercle */
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Taille du cercle */
+    height: 40px; /* Taille du cercle */
+    background-color: #f0f5ff; /* Couleur de fond des cercles (bleu très clair) */
+    color: #4267B2; /* Couleur par défaut des icônes (un bleu Facebook pour l'exemple) */
+    border-radius: 50%; /* Rend l'élément circulaire */
+    font-size: 1.2em; /* Taille de l'icône */
+    text-decoration: none; /* Enlève le soulignement des liens */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition douce pour le survol */
+}
+
+/* Couleurs spécifiques pour chaque icône si vous voulez : */
+.social-icon.facebook {
+    color: #4267B2; /* Couleur Facebook */
+}
+.social-icon.github {
+    color: #333; /* Couleur de GitHub (ou #6e5494 pour un violet GitHub) */
+}
+.social-icon.linkedin {
+    color: #0A66C2; /* Couleur LinkedIn */
+}
+
+.social-icon:hover {
+    background-color: #e0e5f5; /* Couleur de fond plus foncée au survol */
+    /* Vous pouvez changer la couleur de l'icône au survol aussi */
+    /* color: #333; */
+}
+
+/* Styles pour le texte de copyright */
+.copyright p {
+    font-size: 0.85em; /* Taille du texte du copyright */
+    color: #777; /* Couleur grise pour le texte */
+    margin: 0; /* Supprime la marge par défaut des paragraphes */
+}
+
+/* Media Queries pour la responsivité (ajustements pour les petits écrans) */
+@media (max-width: 600px) {
+    .site-footer {
+        padding: 30px 15px;
+    }
+    .social-icons {
+        gap: 10px; /* Réduit l'espace entre les icônes sur petits écrans */
+    }
+    .social-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 1.1em;
+    }
+    .copyright p {
+        font-size: 0.8em;
+    }
+}
+

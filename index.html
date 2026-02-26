@@ -10,15 +10,34 @@
   
     
       <!-- Barre de navigation -->
+<title>Mon Fond Animé</title>
+    <style>
+        body { margin: 0; overflow: hidden; } /* Pour que le fond prenne tout l'écran */
+        canvas { display: block; }
+    </style>
 
-  
 
+  </head>
 
   <body >
-    <video autoplay muted loop id="background-video">
+
+
+<canvas id="mon_canvas"></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <script>
+        // C'est ici que vous collerez le code JS récupéré sur le site
+        console.log("Three.js est chargé :", THREE.REVISION);
+    </script>
+
+
+
+
+    <!--<video autoplay muted loop id="background-video">
       <source src="./photos/BlacKgroundvideo.mp4" type="video/mp4" />
       Votre navigateur ne supporte pas la vidéo HTML5.
-    </video>
+    </video>-->
   
     <div class="content">
       
@@ -33,7 +52,7 @@
             <h1 class="text-3xl font-bold">Agaïchatou Alpha YATTARA</h1>
             <p class="text-lg mt-1">Étudiante en BTS SIO - Spécialité SISR</p>
           </div>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+  
       <br> 
       
 

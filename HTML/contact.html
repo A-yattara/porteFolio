@@ -9,106 +9,130 @@
 
   <link rel="stylesheet" href="../CSS/style-contacte.css">
   <link rel="stylesheet" href="../CSS/style-heade-foter.css">
-
-  
-    <!-- Barre de navigation -->
-    <nav class="bg-purple-900 text-white p-4">
-      <div class="container mx-auto flex justify-between items-center">
-        
-            <div class="main-content-area">
-                <div class="profile-section">
-                    
-
-                    <div class="profile-picture-container">
-                        
-                        <img src="../photos/matof.png" alt="Photo de profil" class="profile-picture" >
-                        
-                    </div>
-                </div>
-               </div>
-
-      <div class="container mx-auto flex justify-between items-center">
-        <div class="font-bold text-xl">Agaïchatou Alpha YATTARA</div>
-        <ul class="flex space-x-4">
-          <li><a href="../index.html" class="hover:underline">Accueil</a></li>
-          <li><a href="profil.html" class="hover:underline">profil</a></li> 
-          <li><a href="projets.html" class="hover:underline">Projets</a></li>
-          <li><a href="vielle.html" class="hover:underline">Veille</a></li>
-          <li><a href="contact.html" class="hover:underline">Contact</a></li>
-        </ul>
-        </div>
-      </div>
-    
-    </nav>
+  <link rel="stylesheet" href="../CSS/style-profil.css">
 </head>
 
-  
-  
+<body class="page">
+  <header class="site-nav">
+    <div class="container-xl">
+      <div class="site-nav-inner">
+        <a class="brand" href="../index.html" aria-label="Retour à l'accueil">
+          <img src="../photos/matof.png" alt="Photo de profil" class="profile-picture">
+          <div>
+            <div class="font-bold text-white">Agaïchatou Alpha YATTARA</div>
+            <div class="text-sm" style="color: rgba(255,255,255,0.72);">BTS SIO · SISR</div>
+          </div>
+        </a>
 
+        <nav class="nav-links" aria-label="Navigation principale">
+          <a href="../index.html">Accueil</a>
+          <a href="profil.html">Profil</a>
+          <a href="projets.html">Projets</a>
+          <a href="vielle.html">Veille</a>
+          <a href="contact.html" class="btn btn-primary" style="padding: 0.55rem 0.8rem;">Me contacter</a>
+        </nav>
+      </div>
+    </div>
+  </header>
 
+  <main>
+    <section class="contact-wrap">
+      <div class="container-xl">
+        <div class="reveal">
+          <h1 class="text-4xl md:text-5xl font-extrabold">Me contacter</h1>
+          <p style="color: rgba(255,255,255,0.74);" class="mt-3 max-w-2xl">
+            Le moyen le plus rapide: un message via le formulaire ci-dessous. Je réponds dès que possible.
+          </p>
+        </div>
 
+        <div class="contact-grid mt-100">
+          <div class="card card-pad reveal">
+            <h2 class="text-2xl font-extrabold">Mes coordonnées</h2>
+            <div class="mt-4 space-y-4">
+              <div class="contact-item">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                <div>
+                  <div class="font-bold">Email</div>
+                  <a href="mailto:yattara.agaichatou1@gmail.com">yattara.agaichatou1@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                <div>
+                  <div class="font-bold">LinkedIn</div>
+                  <a href="https://www.linkedin.com/in/aga%C3%AFchatou-alpha-yattara-652a042a1/" target="_blank" rel="noopener noreferrer">Profil LinkedIn</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                <div>
+                  <div class="font-bold">GitHub</div>
+                  <a href="https://github.com/A-yattara" target="_blank" rel="noopener noreferrer">github.com/A-yattara</a>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <!-- <div class="card card-pad reveal">
+            <h2 class="text-2xl font-extrabold">Envoyer un message</h2>
+            <p style="color: rgba(255,255,255,0.74);" class="mt-2">
+              Formulaire sécurisé via Formspree.
+            </p> -->
 
+            <!-- <form class="form mt-5" action="https://formspree.io/f/xnnvdveo" method="POST">
+              <div class="form-row">
+                <div class="form-group">
+                  <input id="nom" type="text" name="nom" placeholder=" " autocomplete="name" required>
+                  <label for="nom">Nom</label>
+                </div>
+                <div class="form-group">
+                  <input id="email" type="email" name="email" placeholder=" " autocomplete="email" required>
+                  <label for="email">Email</label>
+                </div>
+              </div>
 
-  <body >
-    
-  <section>
-    <h2 class="text-6xl font-bold text-purple-100">Vous pouvez me Contacter via</h2><br><br>
-    <p>Email : <a href="mailto:yattara.agaichatou1@gmail.com" class="text-purple-600 underline">yattara.agaichatou1@gmail.com</a></p>
-    <p>LinkedIn : <a href="https://www.linkedin.com/in/aga%C3%AFchatou-alpha-yattara-652a042a1/" class="text-purple-600 underline" target="_blank">Agaichatou- alpha -yattara </a><br></p>
-    <p>GitHub : <a href="https://github.com/A-yattara" class="text-purple-600 underline" target="_blank">github.com/Alpha-Dev2005</a></p>
-    <br><br><br><br><br><br><br><br>
-    </p>
-    <h2 class="text-6xl font-bold text-purple-100">Envoyer moi directement un message</h2>
-    <form action="https://formspree.io/f/xnnvdveo" method="POST">
-      <input type="text" name="nom" placeholder="Votre nom et prénom" required>
-      <input type="email" name="email" placeholder="Adresse e-mail" required>
-      <input type="tel" name="telephone" placeholder="N° de téléphone" required>
-      <textarea name="message" placeholder="Message" rows="6" required></textarea>
-      <button type="submit">Soumettre</button>
-    </form>
-  </section>
+              <div class="form-group mt-4">
+                <input id="telephone" type="tel" name="telephone" placeholder=" " autocomplete="tel">
+                <label for="telephone">Téléphone (optionnel)</label>
+              </div>
 
+              <div class="form-group mt-4">
+                <textarea id="message" name="message" placeholder=" " rows="6" required></textarea>
+                <label for="message">Message</label>
+              </div>
 
- 
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">
+                  <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                  Envoyer
+                </button>
+              </div>
+            </form> -->
+          <!-- </div> -->
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <button id="toTop" class="btn" type="button" aria-label="Revenir en haut">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
 
+  <footer class="site-footer">
+    <div class="container-xl">
+      <div class="footer-inner">
+        <div class="social-icons" aria-label="Réseaux sociaux">
+          <a href="https://github.com/A-yattara" class="social-icon" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/aga%C3%AFchatou-alpha-yattara-652a042a1/" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:yattara.agaichatou1@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <div class="copyright">
+          <p>Créé par Agaïchatou Alpha YATTARA · Copyright © 2026</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
+  <script src="../JS/app.js" defer></script>
 </body>
-
-<footer class="site-footer">
-  <div class="social-icons">
-      <a href="#" class="social-icon facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://github.com/A-yattara" class="social-icon github" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>      <a href="#" class="social-icon linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-  </div>
-  <div class="copyright">
-      <p>Créé avec ❤️ par  Agaichatou Alpha YATTARA <br> Copyright © 2025 agaichatou-alpha-yattara - Portfolio </p>
-  </div>
 </html>
-<!--- h1 {
-    text-align: right; /* Le texte à l'intérieur du h1 sera aligné à droite */
-    
-    padding: 100px;
-}
-
-
-
-
-
-
-    <a target="_blank" rel="noopener noreferrer" href="mailto: yattara.agaichatou1@gmail.com" class="menu-item">me contacter</a>
-
-<-- Contact --
-<section id="contact" class="container mx-auto p-6">
-  <h2 class="text-2xl font-bold mb-4 text-purple-800">Contact</h2>
-  <p>Email : <a href="mailto:agaichatou.alpha@gmail.com" class="text-purple-600 underline">yattara.agaichatou1@gmail.com</a></p>
-  <p>LinkedIn : <a href="https://www.linkedin.com/in/agaichatou-alpha-yattara" class="text-purple-600 underline" target="_blank">linkedin.com/in/agaichatou-alpha-yattara</a></p>
-  <p>GitHub : <a href="https://github.com/Alpha-Dev2005" class="text-purple-600 underline" target="_blank">github.com/Alpha-Dev2005</a></p>
-  <a target="_blank" rel="noopener noreferrer" href="mailto: yattara.agaichatou1@gmail.com" class="menu-item">me contacter</a>
-
-</section>
-    
-
-
-
--->

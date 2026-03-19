@@ -1,0 +1,210 @@
+/* Projects Page Specific Animations */
+
+/* Enhanced card animations */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(168, 85, 247, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.project-card:hover::before,
+.project-card:focus::before {
+  left: 100%;
+}
+
+.project-card:hover,
+.project-card:focus {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 30px rgba(168, 85, 247, 0.2);
+  border-color: rgba(168, 85, 247, 0.5);
+}
+
+.project-card .badge {
+  transition: all 0.3s ease;
+}
+
+.project-card:hover .badge,
+.project-card:focus .badge {
+  background: rgba(168, 85, 247, 0.3);
+  border-color: rgba(168, 85, 247, 0.6);
+  transform: scale(1.05);
+}
+
+/* Staggered reveal animations */
+.reveal-delay-1 {
+  animation-delay: 0.1s;
+}
+
+.reveal-delay-2 {
+  animation-delay: 0.2s;
+}
+
+.reveal-delay-3 {
+  animation-delay: 0.3s;
+}
+
+.reveal-delay-4 {
+  animation-delay: 0.4s;
+}
+
+.reveal-delay-5 {
+  animation-delay: 0.5s;
+}
+
+.reveal-delay-6 {
+  animation-delay: 0.6s;
+}
+
+/* Pulse animation for badges */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(168, 85, 247, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+  }
+}
+
+.badge-pulse {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Floating animation for icons */
+@keyframes float-icon {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.project-card:hover i,
+.project-card:focus i {
+  animation: float-icon 1s ease-in-out infinite;
+}
+
+/* Grid animation on load */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.grid-animated {
+  animation: slideInUp 0.6s ease-out;
+}
+
+/* Enhanced hover effects for better ergonomics */
+.project-card {
+  cursor: pointer;
+}
+
+.project-card:focus {
+  outline: none;
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3), 0 0 20px rgba(168, 85, 247, 0.15);
+}
+
+/* Smooth transitions for all interactive elements */
+.project-card *,
+.project-card a {
+  transition: all 0.3s ease;
+}
+
+/* Improved grid responsiveness */
+@media (min-width: 1024px) {
+  .grid-animated {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid-animated {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .grid-animated {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .project-card:hover,
+  .project-card:focus {
+    transform: translateY(-4px) scale(1.01);
+  }
+
+  .project-card:hover::before,
+  .project-card:focus::before {
+    left: 100%;
+    transition-duration: 0.3s;
+  }
+}
+
+/* Loading state animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+.loading-shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200px 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .project-card,
+  .project-card *,
+  .project-card a,
+  .badge,
+  .grid-animated {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .project-card::before {
+    display: none;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .project-card {
+    border: 2px solid rgba(255, 255, 255, 0.8);
+  }
+
+  .project-card:hover,
+  .project-card:focus {
+    border-color: rgba(168, 85, 247, 1);
+    background: rgba(168, 85, 247, 0.1);
+  }
+}

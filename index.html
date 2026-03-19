@@ -1,73 +1,224 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Étudiante BTS SIO SISR</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="CSS/style-index.css">
-  
-    
-      <!-- Barre de navigation -->
-
-  
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="CSS/style-index.css" />
+    <link rel="stylesheet" href="CSS/style-heade-foter.css" />
   </head>
 
-  <body >
+  <body class="page">
     <video autoplay muted loop id="background-video">
       <source src="./photos/BlacKgroundvideo.mp4" type="video/mp4" />
       Votre navigateur ne supporte pas la vidéo HTML5.
     </video>
-  
-    <div class="content">
-      
- 
-   
-    <!-- Header -->
-    <section>
-      
-          <h1 class="text-6xl font-bold text-purple-1000">Bienvenue sur mon Portfolio</h1><br>
-         
-          <div>
-            <h1 class="text-3xl font-bold">Agaïchatou Alpha YATTARA</h1>
-            <p class="text-lg mt-1">Étudiante en BTS SIO - Spécialité SISR</p>
+    <div class="video-overlay" aria-hidden="true"></div>
+
+    <header class="site-nav">
+      <div class="container-xl">
+        <div class="site-nav-inner">
+          <a class="brand" href="index.html" aria-label="Retour à l'accueil">
+            <img
+              src="photos/matof.png"
+              alt="Photo de profil"
+              class="profile-picture"
+            />
+            <div>
+              <div class="font-bold text-white">Agaïchatou Alpha YATTARA</div>
+              <div class="text-sm" style="color: rgba(255, 255, 255, 0.72)">
+                BTS SIO · SISR
+              </div>
+            </div>
+          </a>
+
+          <nav class="nav-links" aria-label="Navigation principale">
+            <a href="index.html">Accueil</a>
+            <a href="HTML/profil.html">Profil</a>
+            <a href="HTML/projets.html">Projets</a>
+            <a href="HTML/vielle.html">Veille</a>
+            <a
+              href="HTML/contact.html"
+              class="btn btn-primary"
+              style="padding: 0.55rem 0.8rem"
+              >Me contacter</a
+            >
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container-xl">
+          <div class="reveal">
+            <div class="kicker">
+              <span class="kicker-dot" aria-hidden="true"></span>Portfolio
+            </div>
+            <h1 class="text-5xl md:text-6xl font-extrabold mt-3">
+              Bienvenue dans mon univers 
+            </h1>
+            <h1>"Les systèmes, réseaux et infrastructures ne sont pas un simple apprentissage : c’est une passion."</h1>
+            <p class="hero-sub text-lg mt-3 max-w-2xl">
+              
+              Étudiante en BTS SIO (SISR). Chaque projet présenté 
+              ici témoigne de ma capacité à analyser, concevoir et mettre en œuvre des solutions informatiques.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="HTML/projets.html"
+                ><i class="fa-solid fa-briefcase" aria-hidden="true"></i>Voir
+                mes projets</a
+              >
+              <a class="btn" href="HTML/contact.html"
+                ><i class="fa-solid fa-paper-plane" aria-hidden="true"></i>Me contacter
+              </a
+              >
+              <a class="btn" href="HTML/profil.html"
+                ><i class="fa-solid fa-user" aria-hidden="true"></i>Découvrir
+                mon profil</a
+              >
+            </div>
           </div>
-      <br> 
-      
+        </div>
+      </section>
 
-      <p class="text-lg">VOUS TROUVEREZ L’ENSEMBLE DES DIFFÉRENTES RÉALISATIONS QUE J’AI PU EFFECTUER DURANT MES ANNÉES BTS SIO – OPTION SISR  <br><br>
-        <div class="button-container">
-          <img src="/photos/matof.png" alt="Photo de profil" class="w-32 h-32 rounded-full border-4 border-purple-300 mt-4 md:mt-0">
-          <a href="HTML\profil.html" class="my-custom-button">Profil</a>
+      <section class="section">
+        <div class="container-xl">
+          <div class="grid-3">
+            <div class="card card-pad hover-lift reveal">
+              <div class="badge">
+                <i class="fa-solid fa-network-wired" aria-hidden="true"></i
+                >Réseaux
+              </div>
+              <h2 class="section-title mt-3">Administration & diagnostics</h2>
+              <p class="muted">
+                Configuration, VPN, supervision, documentation claire.
+              </p>
+            </div>
+            <div class="card card-pad hover-lift reveal">
+              <div class="badge">
+                <i class="fa-solid fa-server" aria-hidden="true"></i
+                >Virtualisation
+              </div>
+              <h2 class="section-title mt-3">Environnements de test</h2>
+              <p class="muted">
+                VM, lab, procédures reproductibles et bonnes pratiques.
+              </p>
+            </div>
+            <div class="card card-pad hover-lift reveal">
+              <div class="badge">
+                <i class="fa-solid fa-shield-halved" aria-hidden="true"></i
+                >Cybersécurité
+              </div>
+              <h2 class="section-title mt-3">Hygiène & sécurité</h2>
+              <p class="muted">
+                Principes de durcissement, accès, sensibilisation et continuité.
+              </p>
+            </div>
           </div>
-      </p>
-        </section>
-       
+        </div>
+      </section>
+      
+      <section class="section">
+        <div class="container-xl">
+          <div class="card card-pad reveal">
+            <div
+              class="flex flex-col md:flex-row md:items-center md:justify-between gap-4"
+            >
+              <div>
+                <h2 class="section-title">Envie d'échanger ?</h2>
+                <p class="muted">
+                  Le plus simple: un message via le formulaire ou
+                  LinkedIn/GitHub.
+                </p>
+              </div>
+              <div class="flex gap-3 flex-wrap">
+                <a class="btn btn-primary" href="HTML/contact.html"
+                  ><i class="fa-solid fa-envelope" aria-hidden="true"></i
+                  >Contact</a
+                >
+                <a class="btn" href="mailto:yattara.agaichatou1@gmail.com"
+                  ><i class="fa-solid fa-at" aria-hidden="true"></i>Email</a
+                >
+                <a
+                  class="btn"
+                  href="https://www.linkedin.com/in/aga%C3%AFchatou-alpha-yattara-652a042a1/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
+                  >LinkedIn</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<!-- video en fond
-    <div class="video-background">
-      <video autoplay muted loop playsinline>
-          <source src="votre_video.mp4" type="video/mp4">
-          <source src="votre_video.webm" type="video/webm">
-          Votre navigateur ne supporte pas la lecture de vidéos.
-      </video>
-  </div>
--->
-</div>
-</body>
+      <!-- Veille technologique (nouvelle section) -->
+      <section class="section">
+        <div class="container-xl">
+          <div class="card card-pad reveal">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              <div>
+                <h2 class="section-title">Veille technologique</h2>
+                <p class="muted">Sujets suivis : durcissement Windows/Linux, VPN & segmentation, gestion d'identités (AD), outils ITSM. Je partage des ressources et résumés sur la page dédiée.</p>
+              </div>
+              <div class="flex gap-3 flex-wrap">
+                <a class="btn btn-primary" href="HTML/vielle.html"><i class="fa-solid fa-rss" aria-hidden="true"></i> Voir la veille</a>
+                <a class="btn" href="HTML/contact.html"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Me recommander une source</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
+    <button id="toTop" class="btn" type="button" aria-label="Revenir en haut">
+      <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
 
- <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container-xl">
+        <div class="footer-inner">
+          <div class="social-icons" aria-label="Réseaux sociaux">
+            <a
+              href="https://github.com/A-yattara"
+              class="social-icon"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/aga%C3%AFchatou-alpha-yattara-652a042a1/"
+              class="social-icon"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="mailto:yattara.agaichatou1@gmail.com"
+              class="social-icon"
+              aria-label="Email"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </div>
+          <div class="copyright">
+            <p>Créé par Agaïchatou Alpha YATTARA · Copyright © 2026</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-
-
-<footer class="site-footer">
-  <div class="social-icons">
-      <a href="#" class="social-icon facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://github.com/A-yattara" class="social-icon github" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>      <a href="#" class="social-icon linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-  </div>
-  <div class="copyright">
-      <p>Créé avec ❤️ par  Agaichatou Alpha YATTARA <br> Copyright © 2025 agaichatou-alpha-yattara - Portfolio </p>
-  </div>
+    <script src="JS/app.js" defer></script>
+  </body>
 </html>

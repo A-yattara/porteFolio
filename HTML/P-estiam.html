@@ -1,60 +1,257 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Étudiante BTS SIO SISR</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESTIAM - Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
-  <link rel="stylesheet" href="../CSS/style-heade-foter.css">
+    <link rel="stylesheet" href="../CSS/style-heade-foter.css" />
+  </head>
 
-  
-    <!-- Barre de navigation -->
-    <nav class="bg-purple-900 text-white p-4">
-      <div class="container mx-auto flex justify-between items-center">
-        
-            <div class="main-content-area">
-                <div class="profile-section">
-                    
+  <body class="page">
+    <header class="site-nav">
+      <div class="container-xl">
+        <div class="site-nav-inner">
+          <a class="brand" href="../index.html" aria-label="Retour à l'accueil">
+            <img
+              src="../photos/matof.png"
+              alt="Photo de profil"
+              class="profile-picture"
+            />
+            <div>
+              <div class="font-bold text-white">Agaïchatou Alpha YATTARA</div>
+              <div class="text-sm" style="color: rgba(255, 255, 255, 0.72)">
+                BTS SIO · SISR
+              </div>
+            </div>
+          </a>
 
-                    <div class="profile-picture-container">
-                        
-                        <img src="../photos/matof.png" alt="Photo de profil" class="profile-picture" >
-                        
-                    </div>
-                </div>
-               </div>
-
-      <div class="container mx-auto flex justify-between items-center">
-        <div class="font-bold text-xl">Agaïchatou Alpha YATTARA</div>
-        <ul class="flex space-x-4">
-          <li><a href="../index.html" class="hover:underline">Accueil</a></li>
-          <li><a href="profil.html" class="hover:underline">profil</a></li> 
-          <li><a href="projets.html" class="hover:underline">Projets</a></li>
-          <li><a href="vielle.html" class="hover:underline">Veille</a></li>
-          <li><a href="contact.html" class="hover:underline">Contact</a></li>
-        </ul>
+          <nav class="nav-links" aria-label="Navigation principale">
+            <a href="../index.html">Accueil</a>
+            <a href="profil.html">Profil</a>
+            <a href="projets.html">Projets</a>
+            <a href="vielle.html">Veille</a>
+            <a
+              href="contact.html"
+              class="btn btn-primary"
+              style="padding: 0.55rem 0.8rem"
+              >Me contacter</a
+            >
+          </nav>
         </div>
       </div>
-    
-    </nav>
-  
-</head>
+    </header>
+
+    <main>
+      <section style="padding: 2.5rem 0">
+        <div class="container-xl">
+          <div class="reveal">
+            <h1 class="text-4xl md:text-5xl font-extrabold">ESTIAM Paris</h1>
+            <p class="mt-3" style="color: rgba(255, 255, 255, 0.74)">
+              BTS SIO · Option SISR (en cours)
+            </p>
+          </div>
+          
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+            <div class="card card-pad reveal">
+              <h2 class="text-2xl font-extrabold">Ce que j'y travaille</h2>
+              <ul
+                class="mt-3"
+                style="
+                  color: rgba(255, 255, 255, 0.78);
+                  list-style: disc;
+                  padding-left: 1.25rem;
+                "
+              >
+                <li>Administration systèmes & réseaux</li>
+                <li>Support, tickets, bonnes pratiques</li>
+                <li>Virtualisation & mise en place de lab</li>
+                <li>Notions de cybersécurité</li>
+              </ul>
+            </div>
+
+            
+            <div class="card card-pad reveal">
+              <h2 class="text-2xl font-extrabold">Hackathon "NoCode / No Sleep week"</h2>
+              <ul
+                class="mt-3"
+                style="
+                  color: rgba(255, 255, 255, 0.78);
+                  list-style: disc;
+                  padding-left: 1.25rem;
+                "
+              >
+                <li>Maîtrise des technologies NoCode</li>
+                <li>Collaboration en environnement hybride</li>
+                <li>Gestion du stress et de la performance</li>
+                <li>Innovation et Design Thinking</li>
+              </ul>
+
+              <a
+                href="../doc/Fiche de realisation 1 Agaichatou Alpha YATTARA.pdf"
+                class="btn btn-secondary"
+              >
+                <i class="fa-solid fa-file-alt" aria-hidden="true"></i> Fiche de
+                réalisation
+              </a>
+              
+              
+              </div>
 
 
+            <div class="card card-pad reveal">
+              <h2 class="text-2xl font-extrabold">Hackathon GAMING</h2>
+               <ul
+                class="mt-3"
+                style="
+                  color: rgba(255, 255, 255, 0.78);
+                  list-style: disc;
+                  padding-left: 1.25rem;
+                "
+              >
+                <li>Conception de Game Design & Équilibrage</li>
+                <li>Leadership et Intelligence Collective</li>
+                <li>Vision Stratégique et Orientée Produit</li>
+                <li>Agilité et Collaboration Interdisciplinaire</li>
+              </ul>
+              <a
+                href="../doc/Fiche de realisation 1 Agaichatou Alpha YATTARA.pdf"
+                class="btn btn-secondary"
+              >
+                <i class="fa-solid fa-file-alt" aria-hidden="true"></i> Fiche de
+                réalisation
+              </a>
+                            
+          
+        </div>
+        <div class="card card-pad reveal">
+              <h2 class="text-2xl font-extrabold">Architecture Réseau Sécurisée (pfSense & VLANs)</h2>
+               <ul
+                class="mt-3"
+                style="
+                  color: rgba(255, 255, 255, 0.78);
+                  list-style: disc;
+                  padding-left: 1.25rem;
+                "
+              >
+                <li>Administration Réseau Avancée (Layer 3)</li>
+                <li>Sécurité Périmétrique et Filtrage</li>
+                <li>Optimisation des Flux et QoS</li>
+                <li>Urbanisation des Systèmes d'Information</li>
+              </ul>
+              <a
+                href="../doc/Fiche de realisation 1 Agaichatou Alpha YATTARA.pdf"
+                class="btn btn-secondary"
+              >
+                <i class="fa-solid fa-file-alt" aria-hidden="true"></i> Fiche de
+                réalisation
+              </a>
+              
+            </div>
+       <div class="card card-pad reveal">
+              <h2 class="text-2xl font-extrabold">Administration Centralisée : Active Directory, GLPI & DHCP</h2>
+               <ul
+                class="mt-3"
+                style="
+                  color: rgba(255, 255, 255, 0.78);
+                  list-style: disc;
+                  padding-left: 1.25rem;
+                "
+              >
+                <li>Gestion Centralisée des Identités (IAM)</li>
+                <li>Gestion de Parc et Inventaire (ITAM)</li>
+                <li>Interopérabilité et Synchronisation de Données</li>
+                <li>Automatisation et Déploiement de Configurations</li>
+              </ul>
+              <a
+                href="../doc/Fiche de realisation 1 Agaichatou Alpha YATTARA.pdf"
+                class="btn btn-secondary"
+              >
+                <i class="fa-solid fa-file-alt" aria-hidden="true"></i> Fiche de
+                réalisation
+              </a>
+       </div>
+        <div class="card card-pad reveal">
+              <h2 class="text-2xl font-extrabold">Certification Natacad</h2>
+               <ul
+                class="mt-3"
+                style="
+                  color: rgba(255, 255, 255, 0.78);
+                  list-style: disc;
+                  padding-left: 1.25rem;
+                "
+              >
+                <li>Cisco( CCNA1))</li>
+                <li>Cisco( CCNA2)</li>
+                <li>Cisco( CCNA3)</li>
+                <li>Cybersecurity</li>
+              </ul>
+              <a
+                href="../doc/Fiche de realisation 1 Agaichatou Alpha YATTARA.pdf"
+                class="btn btn-secondary"
+              >
+                <i class="fa-solid fa-file-alt" aria-hidden="true"></i> Fiche de
+                réalisation
+              </a>
+       </div>
+                        
+      </section>
+      <div class="mt-4 flex justify-center">
+                <a class="btn" href="projets.html"
+                  ><i class="fa-solid fa-arrow-left" aria-hidden="true"></i
+                  >Retour</a
+                >
+      </div>
+      
+    </main>
 
+    <button id="toTop" class="btn" type="button" aria-label="Revenir en haut">
+      <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
 
+    <footer class="site-footer">
+      <div class="container-xl">
+        <div class="footer-inner">
+          <div class="social-icons" aria-label="Réseaux sociaux">
+            <a
+              href="https://github.com/A-yattara"
+              class="social-icon"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/aga%C3%AFchatou-alpha-yattara-652a042a1/"
+              class="social-icon"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="mailto:yattara.agaichatou1@gmail.com"
+              class="social-icon"
+              aria-label="Email"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </div>
+          <div class="copyright">
+            <p>Créé par Agaïchatou Alpha YATTARA · Copyright © 2026</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-  <body >
-</body>
-<footer class="site-footer">
-    <div class="social-icons">
-        <a href="#" class="social-icon facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://github.com/A-yattara" class="social-icon github" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>      <a href="#" class="social-icon linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-    </div>
-    <div class="copyright">
-        <p>Créé avec ❤️ par  Agaichatou Alpha YATTARA <br> Copyright © 2025 agaichatou-alpha-yattara - Portfolio </p>
-    </div>
+    <script src="../JS/app.js" defer></script>
+  </body>
 </html>
-

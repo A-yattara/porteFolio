@@ -9,66 +9,43 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../CSS/style-heade-foter.css"> 
   <link rel="stylesheet" href="../CSS/style-profil.css"> 
-  
-  
-    <!-- Barre de navigation -->
-    <nav class="bg-purple-900 text-white p-4">
-      <div class="container mx-auto flex justify-between items-center">
-        
-            <div class="main-content-area">
-                <div class="profile-section">
-                    
 
-                    <div class="profile-picture-container">
-                        
-                        <img src="../photos/matof.png" alt="Photo de profil" class="profile-picture" >
-                        
-                    </div>
-                </div>
-               </div>
-
-      <div class="container mx-auto flex justify-between items-center">
-        <div class="font-bold text-xl">Agaïchatou Alpha YATTARA</div>
-        <ul class="flex space-x-4">
-          <li><a href="../index.html" class="hover:underline">Accueil</a></li>
-          <li><a href="profil.html" class="hover:underline">profil</a></li> 
-          <li><a href="projets.html" class="hover:underline">Projets</a></li>
-          <li><a href="vielle.html" class="hover:underline">Veille</a></li>
-          <li><a href="contact.html" class="hover:underline">Contact</a></li>
-        </ul>
-        </div>
-      </div>
-    
-    </nav>
-  
 </head>
 
+<body class="page">
+    <header class="site-nav">
+        <div class="container-xl">
+            <div class="site-nav-inner">
+                <a class="brand" href="../index.html" aria-label="Retour à l'accueil">
+                    <img src="../photos/matof.png" alt="Photo de profil" class="profile-picture">
+                    <div>
+                        <div class="font-bold text-white">Agaïchatou Alpha YATTARA</div>
+                        <div class="text-sm" style="color: rgba(255,255,255,0.72);">BTS SIO · SISR</div>
+                    </div>
+                </a>
 
+                <nav class="nav-links" aria-label="Navigation principale">
+                    <a href="../index.html">Accueil</a>
+                    <a href="profil.html">Profil</a>
+                    <a href="projets.html">Projets</a>
+                    <a href="vielle.html">Veille</a>
+                    <a href="contact.html" class="btn btn-primary" style="padding: 0.55rem 0.8rem;">Me contacter</a>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-
-
-<body >
+    <main>
  <!-- Section A propos -->
   
  <section id="biographie">
     <div class="content-wrapper">
         <!-- Texte à gauche -->
         <div class="text-content">
-            <h2 class="text-2xl font-bold mb-4 text-purple-800"><strong> Qui suis-je</strong></h2>
-            <p> Je suis une étudiante passionnée par l'informatique,
-                spécialisée dans les services et infrastructures réseau (SISR).
-                Je suis actuellement en alternance dans une entreprise où je développe mes compétences en administration système,
-                virtualisation et cybersécurité.
-            
-                Actuellement en BTS Services Informatiques aux Organisations (SISR) à Paris. Passionné par l’informatique et les nouvelles technologies, je me spécialise dans la gestion des systèmes et réseaux ainsi que la cybersécurité.
-
-                Au cours de ma formation et de mes expériences en alternance, j’ai développé des compétences solides en configuration de postes, administration de machines virtuelles, gestion de tickets d’incidents et utilisation d’outils tels que VirtualBox, GLPI et Zammad. Je suis également à l’aise avec plusieurs langages comme Python, PHP, HTML et CSS, ce qui me permet d’avoir une approche polyvalente dans mes projets.
-
-                Je suis motivé par le défi d’améliorer la sécurité des systèmes et d’optimiser les infrastructures informatiques pour garantir leur fiabilité et leur performance. Mon objectif est de continuer à apprendre et évoluer dans le domaine de la cybersécurité, tout en contribuant efficacement aux projets qui me sont confiés.
-
-                Ce portfolio présente mes réalisations, mes compétences ainsi que mon parcours, et reflète ma volonté constante de progresser et d’apporter de la valeur ajoutée dans le monde de l’informatique.
-            
-            
+            <h2 class="text-2xl font-bold mb-4 text-white"><strong> Qui suis-je</strong></h2>
+            <p> Actuellement en BTS SIO option SISR à Paris, je me spécialise dans les systèmes, réseaux et la cybersécurité.
+Grâce à mon alternance, je développe mes compétences en administration système, virtualisation et gestion d’incidents.
+Ce portfolio présente mon parcours, mes compétences et mes réalisations dans le domaine informatique.
             </p>
         </div>
 
@@ -87,8 +64,8 @@
  <!-- Parcours scolaire Parcours scolaire Parcours scolaire Parcours scolaire Parcours scolaire Parcours scolaire -->
  
 
-  <main class="timeline-section">
-    <h2 class="text-2xl font-bold mb-4 text-purple-800"><strong>Mon Parcour </strong></h2>
+    <section class="timeline-section">
+    <h2 class="text-2xl font-bold mb-4 text-white"><strong>Mon Parcour </strong></h2>
     
     <a href="P-estiam.html" class="hover:underline">
 
@@ -97,14 +74,14 @@
             <div class="timeline-content content-right">
                 <img src="../photos/ESTIAM.jpeg" alt="Image de LGT Baimbridge">
                 <div class="card-text">
-                    <h3>ESTIAM Paris</h3>
+                    <h2><strong>ESTIAM Paris</strong></h2>
                     <p>BTS SIO option SISR en cours</p>
                 </div>
             </div>
             <div class="timeline-year year-left">
                 <span class="dot"></span>
                 <p>Actuellement</p>
-                <p>2025-2026</p>
+                <p>2024-2026</p>
             </div>
         </div>
     </a>
@@ -112,16 +89,17 @@
 
     <a href="P-FST.html" class="hover:underline">
         <div class="timeline-item">
-             <div class="timeline-year year-right">
-                <span class="dot"></span>
-                <p>2019-2023</p>
-            </div>
+             
             <div class="timeline-content content-left">
                 <img src="../photos/FST.jpeg" alt="Image de LGT Faustin Fléret">
                 <div class="card-text">
-                    <h3>Faculté des Siences Technique et Technologique</h3>
+                    <h2><strong>Faculté des Siences Technique et Technologique</strong></h2>
                     <p>Licence Maintenance Réseaux</p>
                 </div>
+            </div>
+            <div class="timeline-year year-right">
+                <span class="dot"></span>
+                <p>2019-2023</p>
             </div>
         </div>
     </a>
@@ -132,19 +110,19 @@
             <div class="timeline-content content-right">
                 <img src="../photos/LYCEE.jpeg" alt="Image de Collège Maximilien Vrécord">
                 <div class="card-text">
-                    <h3>Lycée Ibrahim LY</h3>
+                    <h3><strong>Lycée Ibrahim LY</strong></h3>
                     <p>Bac science Exate </p>
                 </div>
             </div>
             <div class="timeline-year year-left">
                 <span class="dot"></span>
-                <p>2016-2017</p>
+                <p>2015-2017</p>
             </div>
         </div>
     </div>
     </a>
 
-</main>
+</section>
 
 
 
@@ -153,11 +131,11 @@
 <!-- Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences-->
  <!-- Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences-->
   <!-- Compétences Compétences Compétences Compétences Compétences Compétences Compétences Compétences-->
-    <main class="skills-section">
-        <h2 class="text-2xl font-bold mb-4 text-purple-800" ><strong>Mes compétences</strong></h2>
+    <section class="skills-section">
+        <h2 class="text-2xl font-bold mb-4 text-white" ><strong>Mes compétences</strong></h2>
 
 
-        <h3 class="text-2xl font-bold mb-4 text-purple-800"><strong>Réseaux</strong></h3>
+        <h3 class="text-2xl font-bold mb-4 text-white"><strong>Réseaux</strong></h3>
 
         <div class="skills-grid">
             <div class="skill-card">
@@ -166,7 +144,7 @@
                 <div class="skill-progress-bar">
                     <div class="progress-fill" style="width: 90%;"></div>
                 </div>
-                <span class="progress-percentage">90%</span>
+                <span class="progress-percentage">70%</span>
 
             </div>
 
@@ -192,7 +170,7 @@
 
             <div class="skill-card">
                 <p class="skill-name">Linux</p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/100px-Tux.svg.png" alt="Logo Linux">
+                 <img src="../photos/UBUNTU.png" alt="Logo Linux">
                 <div class="skill-progress-bar">
                     <div class="progress-fill" style="width: 90%;"></div>
                 </div>
@@ -201,11 +179,11 @@
 
             <div class="skill-card">
                 <p class="skill-name">Cybersécurité</p>
-                <img src="photos\téléchargement.jpeg "  alt="Logo Cybersécurité">
+                <img src="../photos/cybersecur.png"  alt="Logo Cybersécurité">
                 <div class="skill-progress-bar">
                     <div class="progress-fill" style="width: 90%;"></div>
                 </div>
-                <span class="progress-percentage">90%</span>
+                <span class="progress-percentage">30%</span>
             </div>
             </div>
            
@@ -235,16 +213,16 @@
 
             <div class="skill-card">
                 <p class="skill-name">GitHub</p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/100px-Octicons-mark-github.svg.png" alt="Logo GitHub">
+                <img src="../photos/git.png" alt="Logo GitHub">
                 <div class="skill-progress-bar">
                     <div class="progress-fill" style="width: 80%;"></div>
                 </div>
-                <span class="progress-percentage">80%</span>
+                <span class="progress-percentage">50%</span>
             </div>
 
             <div class="skill-card">
                 <p class="skill-name">OSTiket</p>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/OCS_Inventory_NG_logo.svg/100px-OCS_Inventory_NG_logo.svg.png" alt="Logo OCS Inventory">
+                <img src="../photos/osticket.png" alt="Logo OCS Inventory">
                 <div class="skill-progress-bar">
                     <div class="progress-fill" style="width: 95%;"></div>
                 </div>
@@ -258,7 +236,7 @@
 
 
 
-        <h3 class="text-2xl font-bold mb-4 text-purple-800"><strong>Développement</strong></h3>
+        <h3 class="text-2xl font-bold mb-4 text-white"><strong>Développement</strong></h3>
             
             
         <div class="skills-grid">
@@ -268,7 +246,7 @@
                 <div class="skill-progress-bar">
                     <div class="progress-fill" style="width: 70%;"></div>
                 </div>
-                <span class="progress-percentage">70%</span>
+                <span class="progress-percentage">50%</span>
             </div>
 
             <div class="skill-card">
@@ -277,7 +255,7 @@
                 <div class="skill-progress-bar">
                     <div class="progress-fill" style="width: 70%;"></div>
                 </div>
-                <span class="progress-percentage">70%</span>
+                <span class="progress-percentage">50%</span>
             </div>
 
             <div class="skill-card">
@@ -286,7 +264,7 @@
                 <div class="skill-progress-bar">
                     <div class="progress-fill" style="width: 50%;"></div>
                 </div>
-                <span class="progress-percentage">50%</span>
+                <span class="progress-percentage">20%</span>
             </div>
 
             <div class="skill-card">
@@ -295,7 +273,7 @@
                 <div class="skill-progress-bar">
                     <div class="progress-fill" style="width: 60%;"></div>
                 </div>
-                <span class="progress-percentage">60%</span>
+                <span class="progress-percentage">50%</span>
             </div>
 
             <div class="skill-card">
@@ -305,7 +283,7 @@
                 <div class="skill-progress-bar">
                     <div class="progress-fill" style="width: 60%;"></div>
                 </div>
-                <span class="progress-percentage">60%</span>
+                <span class="progress-percentage">50%</span>
             </div>
 
             <div class="skill-card">
@@ -314,7 +292,7 @@
                 <div class="skill-progress-bar">
                     <div class="progress-fill" style="width: 50%;"></div>
                 </div>
-                <span class="progress-percentage">50%</span>
+                <span class="progress-percentage">30%</span>
             </div>
         </div>
 
@@ -332,7 +310,7 @@
 
 
 
-  </section>
+        </section>
 
 
 
@@ -352,32 +330,28 @@
 
 
 
+    </main>
 
+    <button id="toTop" class="btn" type="button" aria-label="Revenir en haut">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
 
+    <footer class="site-footer">
+        <div class="container-xl">
+            <div class="footer-inner">
+                <div class="social-icons" aria-label="Réseaux sociaux">
+                    <a href="https://github.com/A-yattara" class="social-icon" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/aga%C3%AFchatou-alpha-yattara-652a042a1/" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:yattara.agaichatou1@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <div class="copyright">
+                    <p>Créé par Agaïchatou Alpha YATTARA · Copyright © 2026</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
+    <script src="../JS/app.js" defer></script>
 </body>
-<footer class="site-footer">
-    <div class="social-icons">
-        <a href="#" class="social-icon facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://github.com/A-yattara" class="social-icon github" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>      <a href="#" class="social-icon linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-    </div>
-    <div class="copyright">
-        <p>Créé avec ❤️ par  Agaichatou Alpha YATTARA <br> Copyright © 2025 agaichatou-alpha-yattara - Portfolio </p>
-    </div>
 </html>
 

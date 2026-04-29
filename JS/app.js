@@ -1,5 +1,44 @@
-(() => {
+(async () => {
   const normalizePath = (path) => (path || "").replace(/\\/g, "/");
+
+  // Load HTML partials from `data-include` attributes.
+  async function loadIncludes() {
+    const includes = Array.from(document.querySelectorAll('[data-include]'));
+    if (!includes.length) return;
+
+    for (const el of includes) {
+      const src = el.getAttribute('data-include');
+      if (!src) continue;
+
+      const candidates = [src, './' + src, '/' + src];
+      let up = '';
+      for (let i = 1; i <= 4; i++) {
+        up += '../';
+        candidates.push(up + src);
+      }
+
+      let content = null;
+      for (const c of candidates) {
+        try {
+          const resp = await fetch(normalizePath(c));
+          if (resp && resp.ok) {
+            content = await resp.text();
+            break;
+          }
+        } catch (e) {
+          // try next candidate
+        }
+      }
+
+      if (content !== null) {
+        el.innerHTML = content;
+      } else {
+        el.innerHTML = `<!-- include not found: ${src} -->`;
+      }
+    }
+  }
+
+  await loadIncludes();
 
   // Reveal on scroll with staggered animation
   const revealEls = Array.from(document.querySelectorAll(".reveal"));

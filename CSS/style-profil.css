@@ -214,3 +214,9 @@ body.page {
   margin: 0.15rem 0;
   opacity: 0.95;
 }
+
+/* Masquer la gauge et le pourcentage sur la page Profil */
+.skill-progress-bar,
+.progress-percentage {
+  display: none !important;
+}

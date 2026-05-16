@@ -83,9 +83,16 @@
       .replace(/\/[^/]*$/, "")
       .replace(/^\//, "");
 
+    const currentDirNormalized = currentDir === relativeCurrentPath
+      ? ""
+      : currentDir;
+
     const elements = Array.from(
       header.querySelectorAll("[data-target], [data-src]")
     );
+
+    const fromDir = currentDirNormalized;
+
 
     elements.forEach((el) => {
       const targetAttr = el.hasAttribute("data-target") ? "data-target" : el.hasAttribute("data-src") ? "data-src" : null;
@@ -94,8 +101,8 @@
       const target = el.getAttribute(targetAttr);
       if (!target) return;
 
-      const relativePath = currentDir
-        ? getRelativePath(currentDir, target)
+      const relativePath = fromDir
+        ? getRelativePath(fromDir, target)
         : target;
 
       if (el.hasAttribute("href")) {

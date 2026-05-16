@@ -40,6 +40,75 @@
 
   await loadIncludes();
 
+  function getRelativePath(fromPath, toPath) {
+    const fromSegments = fromPath.split("/").filter(Boolean);
+    const toSegments = toPath.split("/").filter(Boolean);
+    let commonIndex = 0;
+
+    while (
+      commonIndex < fromSegments.length &&
+      commonIndex < toSegments.length &&
+      fromSegments[commonIndex] === toSegments[commonIndex]
+    ) {
+      commonIndex += 1;
+    }
+
+    const upSegments = fromSegments.slice(commonIndex).map(() => "..");
+    const downSegments = toSegments.slice(commonIndex);
+    return upSegments.concat(downSegments).join("/") || ".";
+  }
+
+  function getAppRootPath() {
+    const appScript = Array.from(document.scripts).find((script) =>
+      script.src.includes("JS/app.js") || script.src.endsWith("/app.js")
+    );
+    if (!appScript) return "";
+
+    const scriptUrl = new URL(appScript.src, window.location.href);
+    const path = normalizePath(scriptUrl.pathname);
+    return path.replace(/JS\/app\.js$/, "");
+  }
+
+  function normalizeHeaderPaths() {
+    const header = document.querySelector(".site-nav");
+    if (!header) return;
+
+    const rootPath = getAppRootPath();
+    const currentPath = normalizePath(window.location.pathname);
+    const relativeCurrentPath = rootPath && currentPath.startsWith(rootPath)
+      ? currentPath.slice(rootPath.length)
+      : currentPath;
+
+    const currentDir = relativeCurrentPath
+      .replace(/\/[^/]*$/, "")
+      .replace(/^\//, "");
+
+    const elements = Array.from(
+      header.querySelectorAll("[data-target], [data-src]")
+    );
+
+    elements.forEach((el) => {
+      const targetAttr = el.hasAttribute("data-target") ? "data-target" : el.hasAttribute("data-src") ? "data-src" : null;
+      if (!targetAttr) return;
+
+      const target = el.getAttribute(targetAttr);
+      if (!target) return;
+
+      const relativePath = currentDir
+        ? getRelativePath(currentDir, target)
+        : target;
+
+      if (el.hasAttribute("href")) {
+        el.setAttribute("href", relativePath);
+      }
+      if (el.hasAttribute("src")) {
+        el.setAttribute("src", relativePath);
+      }
+    });
+  }
+
+  normalizeHeaderPaths();
+
   // Reveal on scroll with staggered animation
   const revealEls = Array.from(document.querySelectorAll(".reveal"));
   if (revealEls.length) {
